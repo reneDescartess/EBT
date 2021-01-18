@@ -6,8 +6,11 @@ import MyComponent from "./MyComponent";
 import "./App.css";
 import Web3 from 'web3';
 import web3 from './web3';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import history from "./history";
+import ExchangePage from "./pages/ExchangePage";
 const drizzle = new Drizzle(drizzleOptions);
-/* global BigInt */
+
 //force the browser to connect to metamask upon entering the site
 window.addEventListener('load', async () => {
   // Modern dapp browsers...
@@ -31,6 +34,7 @@ window.addEventListener('load', async () => {
       console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
   }
 });
+
 const App = () => {
   return (
     <DrizzleContext.Provider drizzle={drizzle}>
@@ -41,9 +45,21 @@ const App = () => {
           if (!initialized) {
             return "Loading..."
           }
-
+         
           return (
-            <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
+
+            <Router history={history}>
+              <Switch>
+                <Route exact path="/">
+                    <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
+                </Route>   
+
+                <Route exact path="/exchange">
+                    <ExchangePage drizzle={drizzle} drizzleState={drizzleState} />
+                </Route>
+              </Switch>
+            </Router>
+                
           )
         }}
       </DrizzleContext.Consumer>
