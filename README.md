@@ -1,7 +1,7 @@
 ## Install Dependencies
 
 1. Run `npm install` in app folder and root directory
-2. Download Ganache and add truffle-config.js to it
+2. Download Ganache and add truffle-config.js to it. Specifically, open Ganache -> new workspace -> Pick any name and click on add project -> link the file truffle-config.js -> save workspace on top right corner. 
 3. Install Truffle globally
 
 
