@@ -22,6 +22,12 @@ Run in app folder:
 3. Fill in a random chain ID
 4. Click on save, put in suggested chain ID, save again. 
 
+## Import Account from Ganache
+1. Open Ganache, copy the private key of the first account (on the right-> show key).
+2. Open Metamask, my account -> Import account -> paste private key -> import.
+3. Now connect this account with around 99 ETH to the website. 
+
+
 
 
 
