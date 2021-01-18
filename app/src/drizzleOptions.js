@@ -1,16 +1,22 @@
-import Web3 from "web3";
-import ComplexStorage from "./contracts/ComplexStorage.json";
 import SimpleStorage from "./contracts/SimpleStorage.json";
+import ComplexStorage from "./contracts/ComplexStorage.json";
 import TutorialToken from "./contracts/TutorialToken.json";
 
 const options = {
   web3: {
     block: false,
-    customProvider: new Web3("ws://localhost:8545"),
+    fallback: {
+      type: "ws",
+      url: "ws://127.0.0.1:7545",
+    },
   },
   contracts: [SimpleStorage, ComplexStorage, TutorialToken],
   events: {
     SimpleStorage: ["StorageSet"],
+  },
+  polls: {
+    // set polling interval to 30secs so we don't get buried in poll events
+    accounts: 30000,
   },
 };
 
