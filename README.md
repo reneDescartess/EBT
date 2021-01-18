@@ -16,6 +16,11 @@ Run in app folder:
 
 `npm run start`
 
+## MetaMask setup
+1. Go to Settings -> Network -> Add network 
+2. Name it Ganache, copy the RPC Server URL from the Ganache workspace
+3. Fill in a random chain ID
+4. Click on save, put in suggested chain ID, save again. 
 
 
 
