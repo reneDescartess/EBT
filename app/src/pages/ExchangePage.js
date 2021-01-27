@@ -3,6 +3,7 @@ import React, {useContext, useEffect,useState } from 'react'
 import 'antd/dist/antd.css';
 import NavBar from '../components/NavBar';
 import ConvertPanel from '../components/ConvertPanel';
+import './ExchangePage.css';
 
 const { AccountData, ContractData, ContractForm } = newContextComponents;
 
