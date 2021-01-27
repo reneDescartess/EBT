@@ -53,12 +53,12 @@ const App = () => {
 
             <Router history={history}>
               <Switch>
-                <Route exact path="/">
-                    <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
-                </Route>   
-                <Route exact path="/exchange">
+              <Route exact path="/">
                     <ExchangePage drizzle={drizzle} drizzleState={drizzleState} />
                 </Route>
+                <Route exact path="/example">
+                    <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
+                </Route>   
               </Switch>
             </Router>
                 

@@ -18,7 +18,7 @@ function NavBar(){
                 <ul>
                     <li><a href='/'>Swap</a></li>
                     <li><a href='/'>Dashboard</a></li>
-                    <li><a>Pay</a></li>
+                    <li><a href='/example'>Drizzle</a></li>
                 </ul>
             </div>
             
