@@ -9,6 +9,7 @@ import web3 from './web3';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import history from "./history";
 import ExchangePage from "./pages/ExchangePage";
+import AboutPage from './pages/About';
 import {EyeOutlined,MailOutlined, MessageOutlined, SettingOutlined,} from '@ant-design/icons';
 import { Menu,Space,Input } from 'antd';
 
@@ -58,6 +59,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/example">
                     <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
+                </Route>   
+                <Route exact path="/about">
+                    <AboutPage drizzle={drizzle} drizzleState={drizzleState} />
                 </Route>   
               </Switch>
             </Router>
