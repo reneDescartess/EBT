@@ -9,8 +9,11 @@ import web3 from './web3';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import history from "./history";
 import ExchangePage from "./pages/ExchangePage";
-const drizzle = new Drizzle(drizzleOptions);
+import {EyeOutlined,MailOutlined, MessageOutlined, SettingOutlined,} from '@ant-design/icons';
+import { Menu,Space,Input } from 'antd';
 
+const drizzle = new Drizzle(drizzleOptions);
+const { Search } = Input;
 //force the browser to connect to metamask upon entering the site
 window.addEventListener('load', async () => {
   // Modern dapp browsers...
@@ -53,7 +56,6 @@ const App = () => {
                 <Route exact path="/">
                     <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
                 </Route>   
-
                 <Route exact path="/exchange">
                     <ExchangePage drizzle={drizzle} drizzleState={drizzleState} />
                 </Route>
