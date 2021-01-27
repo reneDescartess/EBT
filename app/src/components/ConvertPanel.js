@@ -5,7 +5,7 @@ import './ConvertPanel.css';
 function ConvertPanel(props){
     const [balance,setBalance] = useState(0);
     const [amount, setAmount] = useState(0);
-    const [token, setToken] = useState(0);
+    const [token, setToken] = useState(null);
 
     return (
         <div className='wrapper'>
