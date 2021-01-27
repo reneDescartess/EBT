@@ -3,16 +3,12 @@
 
 }
 
-
 a:focus {
     outline: black solid 3px;
     box-shadow: none;
     color:green;
 }
 
-.top-nav{
-   
-}
 nav.top-nav {
 
     font-family: sans-serif;
