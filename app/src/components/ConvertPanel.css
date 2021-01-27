@@ -6,7 +6,29 @@
     height: 35%;
     background-color:rgb(192, 231, 147);
     margin:auto;
-    margin-top:5px;
-    margin-bottom: 5px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: flex;
+}
 
+.left{
+    flex:50%;
+    text-align: start;
+}
+.right{
+    flex:50%;
+    text-align: end;
+}
+
+.upper-text{
+    color:grey;
+    font-size: 13px;
+}
+.amount{
+    font-size:20px;
+    font-weight: 500;
+}
+.token-name{
+    font-size:20px;
+    font-weight: 500;
 }

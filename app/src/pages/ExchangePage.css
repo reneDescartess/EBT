@@ -8,3 +8,15 @@
     border-radius: 25px;
     border: 2px solid #73AD21;
 }
+
+.price-panel{
+    display: flex;
+}
+
+.left-text{
+    flex:50%;
+}
+
+.right-text{
+    flex:50%;
+}

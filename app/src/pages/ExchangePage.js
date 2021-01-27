@@ -10,9 +10,9 @@ const { AccountData, ContractData, ContractForm } = newContextComponents;
 const ExchangePage =({ drizzle, drizzleState }) => {
     // destructure drizzle and drizzleState from props
     const [input, setInput] = useState(null);
-    const [exchangeRate, setExchangeRate] = useState(null); 
-    const [from, setFrom] = useState(null); 
-    const [to, setTo] = useState(null); 
+    const [exchangeRate, setExchangeRate] = useState(2333); 
+    const [from, setFrom] = useState("FRAX"); 
+    const [to, setTo] = useState("ETH"); 
     return (
         <div>
             <NavBar/>
@@ -23,7 +23,7 @@ const ExchangePage =({ drizzle, drizzleState }) => {
                     <p className='left-text'>Price</p>
                     <p className='right-text'>{exchangeRate} {from} per {to}</p>
                 </div>
-                <button className='submit'></button>
+                <button className='submit'>Swap</button>
 
             </div>
 

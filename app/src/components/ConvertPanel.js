@@ -5,7 +5,7 @@ import './ConvertPanel.css';
 function ConvertPanel(props){
     const [balance,setBalance] = useState(0);
     const [amount, setAmount] = useState(0);
-    const [token, setToken] = useState(null);
+    const [token, setToken] = useState("ETH");
 
     return (
         <div className='wrapper'>
@@ -15,14 +15,9 @@ function ConvertPanel(props){
             </div>
             <div className='right'>
                 <p className='upper-text'>From</p>
-                <div className='token-selection'>
-                    <div className='token-name'>
-                        <p>ETH</p>
-                    </div>
-                    <div className='dropdown'>
-
-                    </div>
-                </div>
+                <button className='token-selection'>
+                    <p className='token-name'> {token} </p>
+                </button>
             </div>
         </div>
     )
