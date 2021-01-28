@@ -3,10 +3,13 @@
     margin-top:200px;
     text-align: center;
     width: 40%;
-    height: 70%;
-    background-color: aquamarine;
+    height: 350px;
+    box-sizing: border-box;
+    background-color: white;
     border-radius: 25px;
-    border: 2px solid #73AD21;
+    border: 2px solid ;
+    position: relative;
+    justify-content: center;
 }
 
 .price-panel{
@@ -19,4 +22,19 @@
 
 .right-text{
     flex:50%;
+}
+
+.swap-button{
+    padding: 8px 12px;
+    background: #EEEEEE;
+    position: relative;
+    top: 50px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+}
+.swap-button:hover{
+    background: #f3f3f3;
+    color: #000000;
 }
