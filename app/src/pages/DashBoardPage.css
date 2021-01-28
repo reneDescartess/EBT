@@ -1,0 +1,20 @@
+.dash-container{
+    
+    display: flex;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding: 0 20px;
+}
+.left-container{
+    flex:50%;
+    background-color: rgb(12, 12, 49);
+    padding: 20px 10px;
+    color: white;
+    position: relative;
+
+}
+
+.right-container{
+    flex:50%
+}

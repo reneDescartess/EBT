@@ -12,6 +12,7 @@ import ExchangePage from "./pages/ExchangePage";
 import AboutPage from './pages/About';
 import {EyeOutlined,MailOutlined, MessageOutlined, SettingOutlined,} from '@ant-design/icons';
 import { Menu,Space,Input } from 'antd';
+import DashBoardPage from './pages/DashBoardPage';
 
 const drizzle = new Drizzle(drizzleOptions);
 const { Search } = Input;
@@ -62,7 +63,11 @@ const App = () => {
                 </Route>   
                 <Route exact path="/about">
                     <AboutPage drizzle={drizzle} drizzleState={drizzleState} />
-                </Route>   
+                </Route>
+                <Route exact path="/dash">
+                    <DashBoardPage drizzle={drizzle} drizzleState={drizzleState} />
+                </Route>
+               
               </Switch>
             </Router>
                 

@@ -17,7 +17,7 @@ function NavBar(){
             <div class="menu_container">
                 <ul>
                     <li><a href='/'>Swap</a></li>
-                    <li><a href='/'>Dashboard</a></li>
+                    <li><a href='/dash'>Dashboard</a></li>
                     <li><a href='/about'>About</a></li>
                     <li><a href='/example'>smart contract</a></li>
                 </ul>
