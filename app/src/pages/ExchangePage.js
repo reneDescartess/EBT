@@ -58,16 +58,20 @@ const ExchangePage =({ drizzle, drizzleState }) => {
     return (
         <div>
             <NavBar/>
-            <div className='form-wrapper'>
+            <div className='box margin-top-100 ml-5 mr-5'>
                 <ConvertPanel input={input} setInput={setInput} exchangeRate={exchangeRate} setExchangeRate={setExchangeRate}
                 from={from} setFrom={setFrom} to={to} setTo={setTo}/>
                
-                <div className='price-panel'>
-                    <p className='left-text'>Price</p>
-                    <p className='right-text'>{precise(exchangeRate)} {from} per {to}</p>
+                <div className='is-flex flex-direction-row is-justify-content-space-evenly'>
+                    <p >Price</p>
+                    <p >{precise(exchangeRate)} {from} per {to}</p>
                 </div>
                 {/* <button className='submit'>Swap</button> */}
-                <a class="swap-button">Swap</a>
+                <div class="is-flex is-justify-content-center">
+                <a class="button has-text-white is-primary ">Swap</a>
+
+                </div>
+                
 
             </div>
 

@@ -43,22 +43,20 @@ function ConvertPanel(props){
                 <p className='amount'>{props.exchangeRate==0?"NA":precise(props.input/props.exchangeRate)}</p>
             </div>
             <div className='right'>
-                <p className='upper-text'>To</p>
-                {/* <button className='token-selection'>
-                    <p className='token-name'> {token} </p>
-                </button> */}
-                <div class="select-container">
-                    <select onChange={(e)=>props.setTo(e.target.value)}>
-                        <option value="none" class="option">Select</option>
-                        <option value="EBT" class="option">EBT</option>
-                        <option value="FRAX" class="option">FRAX</option>
-                        <option value="ETH" class="option">ETH</option>
-                    </select>
-                    <div class="down-arrow"> 
-                        <DownOutlined style={{fontSize:"15px",color:"black"}} />
+                    <p className='upper-text'>To</p>
+                
+                    <div class="select-container">
+                        <select onChange={(e)=>props.setTo(e.target.value)}>
+                            <option value="none" class="option">Select</option>
+                            <option value="EBT" class="option">EBT</option>
+                            <option value="FRAX" class="option">FRAX</option>
+                            <option value="ETH" class="option">ETH</option>
+                        </select>
+                        <div class="down-arrow"> 
+                            <DownOutlined style={{fontSize:"15px",color:"black"}} />
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
 
 
