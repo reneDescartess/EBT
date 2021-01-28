@@ -18,6 +18,7 @@
 .right{
     flex:50%;
     text-align: end;
+    position: relative;
 }
 
 .upper-text{
@@ -31,4 +32,51 @@
 .token-name{
     font-size:20px;
     font-weight: 500;
+}
+
+/* drop down */
+.select-container{
+    /* padding: 12px 32px 12px 16px ; */
+    width: 72px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    right: 0px;
+    position: absolute;
+}
+
+.down-arrow{
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    padding-top: 10px;
+}
+
+.select-container select{
+    padding: 10px 20px ;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: -internal-light-dark(black, white);
+    -webkit-rtl-ordering: logical;
+    cursor: default;
+    font: 400 13.3333px Arial;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 100px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: whitesmoke;
+    border-bottom: solid 1px black;
+}
+.select-container select .option{
+    background: #F6F6F6;
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
 }
