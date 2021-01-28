@@ -3,7 +3,6 @@ import { DrizzleContext } from "@drizzle/react-plugin";
 import { Drizzle } from "@drizzle/store";
 import drizzleOptions from "./drizzleOptions";
 import MyComponent from "./MyComponent";
-import "./App.css";
 import Web3 from 'web3';
 import web3 from './web3';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
@@ -13,7 +12,7 @@ import AboutPage from './pages/About';
 import {EyeOutlined,MailOutlined, MessageOutlined, SettingOutlined,} from '@ant-design/icons';
 import { Menu,Space,Input } from 'antd';
 import DashBoardPage from './pages/DashBoardPage';
-
+import "./App.sass";
 const drizzle = new Drizzle(drizzleOptions);
 const { Search } = Input;
 //force the browser to connect to metamask upon entering the site

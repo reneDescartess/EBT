@@ -10,8 +10,10 @@ const DashBoardPage=(props)=>{
                 <div class="left-container">
                     <Wallet/>
                 </div>
-                <div class="right-container">
-                    Hi!
+                <div class="right-container ">
+                    <a class="button is-primary">
+                            HI
+                    </a>
                 </div>
 
             </div>
