@@ -9,8 +9,14 @@ export default ({ drizzle, drizzleState }) => {
   return (
     <div className="App">
 
-      <div className="section">
-        <h2>Active Account</h2>
+      <div className="box mt-5">
+            <span class="icon-text mb-4">
+              <span class="icon">
+                <i class="fas fa-user-circle"></i>
+              </span>
+              <span class="has-text-weight-bold">Active Account</span>
+            </span>
+            < br/>
         <AccountData
           drizzle={drizzle}
           drizzleState={drizzleState}
@@ -20,8 +26,14 @@ export default ({ drizzle, drizzleState }) => {
         />
       </div>
 
-      <div className="section">
-        <h2>EBT</h2>
+      <div className="box">
+      <span class="icon-text mb-4">
+              <span class="icon">
+                <i class="fas fa-money-bill"></i>
+              </span>
+              <span class="has-text-weight-bold">EBT</span>
+            </span>
+            <br/>
         <p>
           <strong>Total Supply: </strong>
           <ContractData
@@ -42,7 +54,12 @@ export default ({ drizzle, drizzleState }) => {
             methodArgs={[drizzleState.accounts[0]]}
           />
         </p>
-        <h3>Send Tokens</h3>
+        <span class="icon-text mt-4 mb-4">
+              <span class="icon">
+                <i class="fas fa-share-square"></i>
+              </span>
+              <span class="has-text-weight-bold">Send Token</span>
+            </span>
         <ContractForm
           drizzle={drizzle}
           contract="TutorialToken"
