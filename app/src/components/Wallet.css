@@ -60,8 +60,7 @@
     flex-direction: row;
     height: 100px;
     width:400px;
-    border-left: gray solid;
-    border-right: solid gray;
+  
 }
 
 .scroll-wrapper::-webkit-scrollbar {

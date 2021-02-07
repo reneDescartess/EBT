@@ -17,38 +17,26 @@ const Wallet =(props)=>{
 
     const data=[{
         id:1,
-        company:"Apple",
+        company:"Walmart",
         time:"1:02pm",
-        spending:"$23"
+        spending:"$4.44"
     },{
         id:2,
-        company:"Apple",
-        time:"1:02pm",
-        spending:"$23"
+        company:"Walmart",
+        time:"1:04pm",
+        spending:"$8.23"
 
     },{
         id:3,
-        company:"Apple",
-        time:"1:02pm",
-        spending:"$23"
+        company:"Food Pantry",
+        time:"1:06pm",
+        spending:"$9.3"
 
     },{
-        id:1,
-        company:"Apple",
-        time:"1:02pm",
-        spending:"$23"
-    },{
-        id:2,
-        company:"Apple",
-        time:"1:02pm",
-        spending:"$23"
-
-    },{
-        id:3,
-        company:"Apple",
-        time:"1:02pm",
-        spending:"$23"
-
+        id:4,
+        company:"Woodman",
+        time:"1:07pm",
+        spending:"$3.2"
     }];
     return(
         <div class="wallet">
