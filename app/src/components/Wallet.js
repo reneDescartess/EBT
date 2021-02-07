@@ -85,13 +85,13 @@ const Wallet =(props)=>{
                 <List
                     dataSource={data}
                     renderItem={item => (
-                    <List.Item key={item.id} style={{color:"white"}}>
+                    <List.Item key={item.id} >
                         <List.Item.Meta
                         avatar={
                             <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
                         }
-                        title={<a href="https://ant.design" style={{color:"white"}}>{item.company}</a>}
-                        description={<div style={{color:"white"}}>{item.time}</div>}
+                        title={<a href="https://ant.design">{item.company}</a>}
+                        description={<div >{item.time}</div>}
                         />
                         <div>- {item.spending}</div>
                     </List.Item>
