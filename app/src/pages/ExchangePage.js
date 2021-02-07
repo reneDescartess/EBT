@@ -57,7 +57,7 @@ const ExchangePage =({ drizzle, drizzleState }) => {
     },[from,to]);
     return (
         <div>
-            <NavBar/>
+
             <div className='box margin-top-100 ml-5 mr-5'>
                 <ConvertPanel input={input} setInput={setInput} exchangeRate={exchangeRate} setExchangeRate={setExchangeRate}
                 from={from} setFrom={setFrom} to={to} setTo={setTo}/>

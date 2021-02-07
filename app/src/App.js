@@ -13,6 +13,7 @@ import {EyeOutlined,MailOutlined, MessageOutlined, SettingOutlined,} from '@ant-
 import { Menu,Space,Input } from 'antd';
 import DashBoardPage from './pages/DashBoardPage';
 import "./App.sass";
+import NavBar from "./components/NavBar";
 const drizzle = new Drizzle(drizzleOptions);
 const { Search } = Input;
 //force the browser to connect to metamask upon entering the site
@@ -53,21 +54,32 @@ const App = () => {
           return (
 
             <Router history={history}>
-              <Switch>
-              <Route exact path="/">
-                    <ExchangePage drizzle={drizzle} drizzleState={drizzleState} />
-                </Route>
-                <Route exact path="/example">
-                    <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
-                </Route>   
-                <Route exact path="/about">
-                    <AboutPage drizzle={drizzle} drizzleState={drizzleState} />
-                </Route>
-                <Route exact path="/dash">
-                    <DashBoardPage drizzle={drizzle} drizzleState={drizzleState} />
-                </Route>
-               
-              </Switch>
+              
+              <div class="columns">
+                <div class="column is-one-fifth">
+                    <NavBar/>
+                </div>
+                <div class="column is-four-fifths">
+                    <Switch>
+                    <Route exact path="/">
+                        <ExchangePage drizzle={drizzle} drizzleState={drizzleState} />
+                    </Route>
+                    <Route exact path="/example">
+                        <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
+                    </Route>   
+                    <Route exact path="/about">
+                        <AboutPage drizzle={drizzle} drizzleState={drizzleState} />
+                    </Route>
+                    <Route exact path="/dash">
+                        <DashBoardPage drizzle={drizzle} drizzleState={drizzleState} />
+                    </Route>
+                  
+                  </Switch>
+                   
+                </div>
+          
+              </div>
+              
             </Router>
                 
           )

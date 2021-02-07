@@ -5,16 +5,12 @@ import Wallet from '../components/Wallet';
 const DashBoardPage=(props)=>{
     return(
         <div>
-            <NavBar/>
+        
             <div class="dash-container">
-                <div class="left-container">
+                <div class="box color-dark-blue-background">
                     <Wallet/>
                 </div>
-                <div class="right-container ">
-                    <a class="button is-primary">
-                            HI
-                    </a>
-                </div>
+              
 
             </div>
         </div>

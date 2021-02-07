@@ -6,13 +6,10 @@
     width: 100%;
     padding: 0 20px;
 }
-.left-container{
-    flex:50%;
-    background-color: rgb(12, 12, 49);
-    padding: 20px 10px;
-    color: white;
-    position: relative;
+.color-dark-blue-background{
 
+    background-color: rgb(12, 12, 49);
+   
 }
 
 .right-container{
