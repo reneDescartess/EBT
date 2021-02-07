@@ -26,8 +26,7 @@ function NavBar(){
             </p>
             <ul class="menu-list">
                 <li><a href="/">Swap</a></li>
-                <li><a href="/example">Example</a></li>
-                <li><a>Balance</a></li>
+                <li><a href="/example">Transfer</a></li>
             </ul>
         </aside>
         
